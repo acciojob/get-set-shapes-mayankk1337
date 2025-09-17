@@ -16,18 +16,16 @@ class Rectangle {
 	get Perimeter(){
 		return 2*(this._height+this._width);
 	}
+
+	getArea() { return this.Area; }
+   getPerimeter() { return this.Perimeter; }
 }
 
 class Square extends Rectangle {
 	constructor(side){
 		super(side,side);
 	}
-	get Area(){
-		return this.width*this.height;
-	}
-	get Perimeter(){
-		return 4*(this.height);
-	}
+	
 }
 
 // Do not change the code below this line
